@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import HeaderNav from './containers/HeaderNav/HeaderNav'
-import { Sidebar } from 'semantic-ui-react';
+import Sidebar from './containers/SideBar/SideBar'
 
 
 class App extends Component {
