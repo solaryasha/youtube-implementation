@@ -1,0 +1,14 @@
+.nextup-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .nextup-toggle{
+        display: flex;
+        
+    
+        span {
+            margin-right: 10px;
+        }
+    }
+}

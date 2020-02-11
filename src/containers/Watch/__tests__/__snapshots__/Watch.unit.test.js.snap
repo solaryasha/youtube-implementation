@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Watch renders 1`] = `
+<div
+  className="watch-grid"
+>
+  <Video
+    className="video"
+    id="J6G7uaNHH54"
+  />
+  <VideoMetadata
+    className="metadata"
+    viewcount="9999"
+  />
+  <VideoInfoBox />
+  <div
+    className="comments"
+    style={
+      Object {
+        "backgroundColor": "aqua",
+        "height": "100px",
+        "width": "100%",
+      }
+    }
+  >
+    Comments
+  </div>
+  <RelatedVideos
+    className="related-videos"
+  />
+</div>
+`;
