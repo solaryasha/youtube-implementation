@@ -13,22 +13,9 @@ const VideoGrid = (props) => {
         <Fragment>
             <VideoGridHeader title={props.title} />
             <div className='video-grid'>
-                <VideoPreview />
-                <VideoPreview />
-                <VideoPreview />
-                <VideoPreview />
-                <VideoPreview />
-                <VideoPreview />
-                <VideoPreview />
-                <VideoPreview />
-                <VideoPreview />
-                <VideoPreview />
-                <VideoPreview />
-                <VideoPreview />
-                <VideoPreview />
-                <VideoPreview />
-                <VideoPreview />
-                <VideoPreview />
+            {
+                props.videolist.map(video => <VideoPreview { ...video }/>)
+            }
                 
             </div>
             {divider}

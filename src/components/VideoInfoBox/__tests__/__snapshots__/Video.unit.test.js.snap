@@ -1,131 +1,137 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`VideoInfoBox renders collapsed 1`] = `
-<div
-  className="video-infobox"
->
-  <Image
-    as="img"
-    circular={true}
-    className="channel-image"
-    src="https://via.placeholder.com/48x48"
-    ui={true}
-  />
+<Fragment>
   <div
-    className="video-info"
+    className="video-infobox"
   >
+    <Image
+      as="img"
+      circular={true}
+      className="channel-image"
+      src="https://via.placeholder.com/48x48"
+      ui={true}
+    />
     <div
-      className="channel-title"
+      className="video-info"
     >
-      Some Channel Name
-    </div>
-    <div
-      className="channel-date"
-    >
-      Thu May 14 2015
-    </div>
-  </div>
-  <Button
-    as="button"
-    className="subscibe"
-    color="youtube"
-  >
-    subscribe
-  </Button>
-  <div
-    className="video-description"
-  >
-    <div
-      className="collapsed"
-    >
-      <p>
-        First paragraph
-      </p>
-      <p>
-        Second paragraph
-      </p>
-      <p>
-        First paragraph
-      </p>
-      <p>
-        First paragraph
-      </p>
-      <p>
-        First paragraph
-      </p>
+      <div
+        className="channel-title"
+      >
+        Some Channel Name
+      </div>
+      <div
+        className="channel-date"
+      >
+        Thu May 14 2015
+      </div>
     </div>
     <Button
       as="button"
-      compact={true}
-      onClick={[Function]}
+      className="subscibe"
+      color="youtube"
     >
-      Show More
+      subscribe
     </Button>
+    <div
+      className="video-description"
+    >
+      <div
+        className="collapsed"
+      >
+        <p>
+          First paragraph
+        </p>
+        <p>
+          Second paragraph
+        </p>
+        <p>
+          First paragraph
+        </p>
+        <p>
+          First paragraph
+        </p>
+        <p>
+          First paragraph
+        </p>
+      </div>
+      <Button
+        as="button"
+        compact={true}
+        onClick={[Function]}
+      >
+        Show More
+      </Button>
+    </div>
   </div>
-</div>
+  <Divider />
+</Fragment>
 `;
 
 exports[`VideoInfoBox renders expanded 1`] = `
-<div
-  className="video-infobox"
->
-  <Image
-    as="img"
-    circular={true}
-    className="channel-image"
-    src="https://via.placeholder.com/48x48"
-    ui={true}
-  />
+<Fragment>
   <div
-    className="video-info"
+    className="video-infobox"
   >
+    <Image
+      as="img"
+      circular={true}
+      className="channel-image"
+      src="https://via.placeholder.com/48x48"
+      ui={true}
+    />
     <div
-      className="channel-title"
+      className="video-info"
     >
-      Some Channel Name
-    </div>
-    <div
-      className="channel-date"
-    >
-      Thu May 14 2015
-    </div>
-  </div>
-  <Button
-    as="button"
-    className="subscibe"
-    color="youtube"
-  >
-    subscribe
-  </Button>
-  <div
-    className="video-description"
-  >
-    <div
-      className="expanded"
-    >
-      <p>
-        First paragraph
-      </p>
-      <p>
-        Second paragraph
-      </p>
-      <p>
-        First paragraph
-      </p>
-      <p>
-        First paragraph
-      </p>
-      <p>
-        First paragraph
-      </p>
+      <div
+        className="channel-title"
+      >
+        Some Channel Name
+      </div>
+      <div
+        className="channel-date"
+      >
+        Thu May 14 2015
+      </div>
     </div>
     <Button
       as="button"
-      compact={true}
-      onClick={[Function]}
+      className="subscibe"
+      color="youtube"
     >
-      Show Less
+      subscribe
     </Button>
+    <div
+      className="video-description"
+    >
+      <div
+        className="expanded"
+      >
+        <p>
+          First paragraph
+        </p>
+        <p>
+          Second paragraph
+        </p>
+        <p>
+          First paragraph
+        </p>
+        <p>
+          First paragraph
+        </p>
+        <p>
+          First paragraph
+        </p>
+      </div>
+      <Button
+        as="button"
+        compact={true}
+        onClick={[Function]}
+      >
+        Show Less
+      </Button>
+    </div>
   </div>
-</div>
+  <Divider />
+</Fragment>
 `;

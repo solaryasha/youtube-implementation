@@ -13,18 +13,7 @@ exports[`Watch renders 1`] = `
     viewcount="9999"
   />
   <VideoInfoBox />
-  <div
-    className="comments"
-    style={
-      Object {
-        "backgroundColor": "aqua",
-        "height": "100px",
-        "width": "100%",
-      }
-    }
-  >
-    Comments
-  </div>
+  <Comments />
   <RelatedVideos
     className="related-videos"
   />
