@@ -9,7 +9,7 @@ const convertPublishedTime = (str) => (
   new Date().getDate() - new Date(str).getDate()
 );
 
-const convertData = ({items}) => {
+export const convertData = ({items}) => {
   return items.map(video => {
     const { id, snippet, contentDetails, statistics } = video;
     const { publishedAt, title,thumbnails, channelTitle } = snippet;
