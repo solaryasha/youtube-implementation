@@ -4,19 +4,21 @@ import { Button, Icon, Divider } from 'semantic-ui-react';
 import Rating from '../Rating/Rating';
 
 const VideoMetadata = (props) => {
-  const viewCount = Number(props.viewcount).toLocaleString() || '';
+  if (props.content === null) {
+    return null;
+  }
+
+  const viewCount = Number(props.content[0].viewCount).toLocaleString() || '';
 
   return (
     <div className="video-metadata">
-      <h3>Stargazer - A Chillwave Mix</h3>
+      <h3>{props.content[0].title}</h3>
       <div className="video-stats">
         <span>
-          {viewCount}
-          {' '}
-          views
+          {`${viewCount} views`}
         </span>
         <div className="video-actions">
-          <Rating likes={75} dislikes={25} />
+          <Rating likes={props.content[0].likeCount} dislikes={props.content[0].dislikeCount} />
           <Button basic icon labelPosition="left">
             <Icon name="share" />
             Share

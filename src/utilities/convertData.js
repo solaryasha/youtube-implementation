@@ -10,15 +10,15 @@ const convertPublishedTime = str => (
 
 export const convertData = ({ items }) => items.map((video) => {
   const { id, snippet, contentDetails, statistics } = video;
-  const { publishedAt, title, thumbnails, channelTitle } = snippet;
+  const { publishedAt, description, title, thumbnails, channelTitle } = snippet;
   const { medium } = thumbnails;
   const { url } = medium;
   const { duration } = contentDetails;
-  const { viewCount } = statistics;
+  const { viewCount, likeCount, dislikeCount } = statistics;
   const fixedDuration = convertDuration(duration);
   const publishedTime = convertPublishedTime(publishedAt);
 
   return {
-    id, publishedTime, title, url, channelTitle, fixedDuration, viewCount,
+    id, publishedTime, title, url, description, channelTitle, fixedDuration, viewCount, likeCount, dislikeCount,
   };
 });
