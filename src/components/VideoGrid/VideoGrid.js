@@ -12,7 +12,8 @@ const VideoGrid = (props) => {
       <VideoGridHeader title={props.title} />
       <div className="video-grid">
         {
-          props.videolist.map(video => <VideoPreview key={video.id} {...video} />)
+          props.videolist
+            .map(video => <VideoPreview key={video.id} {...video} />)
         }
 
       </div>

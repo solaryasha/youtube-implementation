@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Watch.scss';
-import { useRouter } from 'react-router-dom';
 import Video from '../../components/Video/Video';
 import RelatedVideos from '../../components/RelatedVideos/RelatedVideos';
 import VideoMetadata from '../../components/VideoMetadata/VideoMetadata';
