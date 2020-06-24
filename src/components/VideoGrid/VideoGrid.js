@@ -4,23 +4,21 @@ import { Divider } from 'semantic-ui-react';
 import { VideoPreview } from '../VideoPreview/VideoPreview';
 import VideoGridHeader from './VideoGridHeader/VideoGridHeader';
 
-
-
 const VideoGrid = (props) => {
-    const divider = props.hideDivider ? null: <Divider />;
+  const divider = props.hideDivider ? null : <Divider />;
 
-    return (
-        <Fragment>
-            <VideoGridHeader title={props.title} />
-            <div className='video-grid'>
-            {
-                props.videolist.map(video => <VideoPreview { ...video }/>)
-            }
-                
-            </div>
-            {divider}
-        </Fragment>
-    );
-}
+  return (
+    <Fragment>
+      <VideoGridHeader title={props.title} />
+      <div className="video-grid">
+        {
+          props.videolist.map(video => <VideoPreview key={video.id} {...video} />)
+        }
+
+      </div>
+      {divider}
+    </Fragment>
+  );
+};
 
 export default VideoGrid;
