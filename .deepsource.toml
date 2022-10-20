@@ -1,5 +1,7 @@
 version = 1
 
+test_patterns = ["src/__tests__/**/?(*.)+(spec|test|unit).[tj]s?(x)"]
+
 [[analyzers]]
 name = "test-coverage"
 enabled = true
